@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+
+</body>
+
+<script>
+
+    let root = document.querySelector("#root");
+    let h1 = React.createElement('h1',{style: ({color: "blue"}),class:"heading-1"}, 'hello'); //Properties are always passed inside object.
+    ReactDOM.render(h1,root)
+
+</script>
+
+</html>
